@@ -1,6 +1,9 @@
+<div class="wrapper">
 <div class="container">
 
-  <h1 class="yellow">Class Album {{nane}}</h1>
+  <h1 class="center title">Fintrak Academy Album</h1>
+
+  <!-- <h1 class="yellow">Class Album {{nane}}</h1>
   <ul class="list-group small-width">
     <li class="list-group-item">Tosin</li>
     <li class="list-group-item">Zino </li>
@@ -9,7 +12,21 @@
     <li class="list-group-item">CHarlse</li>
 
   </ul>
-  <hr>
+  <hr> -->
+  <!-- <div class="row">
+      <div class="col-md-4" *ngFor="let trainee of academy; let i = index">{{i}}</div>
+
+  </div> -->
+    <div class="row">
+      <div class="col-md-4" *ngFor="let trainees of academy; let i = index">
+        <app-trainee [trainees]="trainees"></app-trainee>
+
+      </div>
+
+  </div>
+
+
+<!--
   <ul class="list-group small-width li-no-bullet row">
     <li   *ngFor="let trainees of academy" class="col-md-4">
 
@@ -28,6 +45,7 @@
     </li>
 
   </ul>
-  <hr>
-  <app-album></app-album>
+  <hr> -->
+  <!-- <app-album></app-album> -->
+</div>
 </div>

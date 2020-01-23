@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlbumComponent } from './album/album.component';
 import { CommonModule } from '@angular/common';
+import { TraineeComponent } from './trainee/trainee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Whatever,
-    AlbumComponent
+    AlbumComponent,
+    TraineeComponent
 
   ],
   imports: [
