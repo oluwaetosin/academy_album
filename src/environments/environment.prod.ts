@@ -1,13 +1,13 @@
 export const environment  = {
   production: true,
   databaseURL: 'https://fintrakacademy2.firebaseio.com',
-  firebaseConfig : {
-    apiKey: 'AIzaSyDFiB4tKNWImlCmTmM1GWWbJd59xMiK9qM',
-    authDomain: 'fintrakacademy-fe8d4.firebaseapp.com',
-    databaseURL: 'https://fintrakacademy-fe8d4.firebaseio.com',
-    projectId: 'fintrakacademy-fe8d4',
-    storageBucket: 'fintrakacademy-fe8d4.appspot.com',
-    messagingSenderId: '869803039805',
-    appId: '1:869803039805:web:fa0afddfcc36159c1d1e54'
+  firebaseConfig :{
+    apiKey: 'AIzaSyDaOdr8FUExZNIcJ5Hbw-WVEe_TgGaDlWY',
+    authDomain: 'fintrakacademyproject.firebaseapp.com',
+    databaseURL: 'https://fintrakacademyproject.firebaseio.com',
+    projectId: 'fintrakacademyproject',
+    storageBucket: 'fintrakacademyproject.appspot.com',
+    messagingSenderId: '864299079701',
+    appId: '1:864299079701:web:41c10ff848f4734a1d561c'
   }
 };

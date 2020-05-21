@@ -16,7 +16,8 @@ export class NewTraineeComponent implements OnInit {
   genders = ['Male', 'Female', 'Others'];
 
   constructor(private fb: FormBuilder,
-              private traineeServ: TraineeService) {
+              private traineeServ: TraineeService
+              ) {
       this.traineeForm = this.fb.group({
         name: ['', Validators.required],
         complexion: ['', Validators.required],
@@ -35,6 +36,8 @@ export class NewTraineeComponent implements OnInit {
   ngOnInit() {
   }
 
+
+
   addTrainee(form: FormGroup) {
     console.log(form.value);
     const formData = form.value;
@@ -43,17 +46,17 @@ export class NewTraineeComponent implements OnInit {
     }
     const newFormData: ITrainee = formData;
     // this.traineeServ.addTrainee(newFormData);
-    this.traineeServ.addTrainee(newFormData)
-    .subscribe(
-      (response) => {
-        console.log(response);
-      },
-      (error) => {
-        console.log(error);
-      },
-      () => {
+    this.traineeServ.addTrainee(newFormData);
+    // .subscribe(
+    //   (response) => {
+    //     console.log(response);
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //   },
+    //   () => {
 
-      });
+    //   });
     form.reset();
 
   }
