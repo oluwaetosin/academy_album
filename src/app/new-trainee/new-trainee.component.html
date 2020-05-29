@@ -1,4 +1,4 @@
- 
+
  <div class="container">
      <form [formGroup]="traineeForm"   (ngSubmit)="addTrainee(traineeForm)">
          <div>
@@ -35,29 +35,34 @@
         </div>
         <div>
             <label for="almamata">Almamata</label>
-            <input type="text" class="form-control" formControlName="almamata" 
+            <input type="text" class="form-control" formControlName="almamata"
              >
         </div>
         <div>
             <label for="discipline">Discipline</label>
-            <input type="text" class="form-control" formControlName="discipline" 
+            <input type="text" class="form-control" formControlName="discipline"
              >
         </div>
 
         <div>
             <label for="email">Email</label>
-            <input type="email" class="form-control" formControlName="email" 
+            <input type="email" class="form-control" formControlName="email"
              >
         </div>
         <div>
             <label for="telephone">Telephone</label>
-            <input type="text" class="form-control" formControlName="telephone" 
+            <input type="text" class="form-control" formControlName="telephone"
              >
         </div>
         <div>
             <label for="about">Tell us about You</label>
             <textarea name="about" id="" cols="30" rows="10" formControlName="about"></textarea>
         </div>
+        <div class="form-group">
+          <label for="file">Choose File</label>
+          <input id="file" type="file" (change)="fileUpload($event.target.files)">
+      </div>
+
         <div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>

@@ -21,6 +21,7 @@
     "@angular/router": "~8.2.14",
     "bootstrap": "^4.4.1",
     "firebase": "^7.14.4",
+    "micromodal": "^0.4.6",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import 'firebase/storage';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +11,14 @@ import 'firebase/auth';
 export class FirebaseService {
   public authRef = null;
   public firestoreRef = null;
+  public firebaseStorage = null;
+  public firebase = null;
+
   constructor() {
     firebase.initializeApp(environment.firebaseConfig);
     this.firestoreRef = firebase.firestore();
+    this.firebaseStorage =  firebase.storage();
+    this.firebase = firebase;
 
   }
   getFireStore() {

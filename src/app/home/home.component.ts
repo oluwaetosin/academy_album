@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TraineeService } from './../service/trainee.service';
 import { ITrainee } from './../models';
-
+declare var $:any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -24,6 +24,7 @@ constructor(private traineeServ: TraineeService) { }
 trainees: ITrainee[] = [];
   ngOnInit() {
     this.trainees = this.traineeServ.getTrainees();
+    $('#exampleModal').modal({show: true});
   }
 
 traineeListener(trainee) {

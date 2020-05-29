@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="container">
-      <h1 class="centre">FINTRAK SOFTWARE ALBUM</h1>
+      <h1 class="centre banner">FINTRAK SOFTWARE ALBUM</h1>
       <!-- <ul class="list-group small-width">
           <li class="list-group-item"><strong>Ruky</strong></li>
           <li class="list-group-item"><strong>Najeem</strong></li>
@@ -14,12 +14,12 @@
         <div class="col-md-4">2</div>
         <div class="col-md-4">3</div>
       </div> -->
-    
+
       <!-- <div class="row">
         <div class="col-md-4" *ngFor="let trainee of academy; let i = index">{{i}}</div>
       </div> -->
       <div class="row">
-        
+
         <!-- <div *ngFor="let trainee of trainees;">{{trainee.name}}</div> -->
 
       </div>
@@ -47,3 +47,27 @@
       </div>
     </div>
     </div>
+<!-- Modal -->
+<div class="wrapper">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,23 +1,28 @@
 
-
-<div class="row">
-  <nav class="col-md-4">
-<ul>
-  <li>
-    <a [routerLink]="['/home']" >Home</a>
-  </li>
-  <li>
-    <a [routerLink]="['/form']" >Template Form</a>
-  </li>
-  <li>
-    <a [routerLink]="['/reactiveform']" >Reactive Form</a>
-  </li>
-  <li>
-    <a [routerLink]="['/trainee/new']" >New Trainee</a>
-  </li>
-</ul>
-  </nav>
-  <div class="col-md-8">
-    <router-outlet></router-outlet>
+<div class="header">
+  <div class="logo">
+      <a  [routerLink]="['/']">FINTRAK ACADEMY </a>
   </div>
+  <ul class="menu">
+    <li>
+      <a [routerLink]="['/home']" >Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['/form']" >Template Form</a>
+    </li>
+    <li>
+      <a [routerLink]="['/reactiveform']" >Reactive Form</a>
+    </li>
+    <li>
+      <a [routerLink]="['/trainee/new']" >New Trainee</a>
+    </li>
+  </ul>
+</div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+<div class="wrapper">
+    <router-outlet></router-outlet>
 </div>
