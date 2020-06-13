@@ -1,8 +1,8 @@
 
 
-<div class="row">
-  <nav class="col-md-4">
-<ul>
+<div class="header">
+<div class="logo">FINTRAK ACADEMY</div>
+<ul class="menu">
   <li>
     <a [routerLink]="['/home']" >Home</a>
   </li>
@@ -16,8 +16,9 @@
     <a [routerLink]="['/trainee/new']" >New Trainee</a>
   </li>
 </ul>
-  </nav>
-  <div class="col-md-8">
+</div>
+
+  <div class="wrapper">
     <router-outlet></router-outlet>
   </div>
-</div>
+

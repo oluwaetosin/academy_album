@@ -17,6 +17,7 @@ import { NewTraineeComponent } from './new-trainee/new-trainee.component';
 import { UpdateTraineeComponent } from './update-trainee/update-trainee.component';
 import { DeleteTraineeComponent } from './delete-trainee/delete-trainee.component';
 import { ViewTraineeComponent } from './view-trainee/view-trainee.component';
+import { EmployeeComponent } from './employee/employee.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +31,10 @@ import { ViewTraineeComponent } from './view-trainee/view-trainee.component';
     NewTraineeComponent,
     UpdateTraineeComponent,
     DeleteTraineeComponent,
-    ViewTraineeComponent
+    ViewTraineeComponent,
+    EmployeeComponent
   ],
+  entryComponents: [],
   imports: [
   BrowserModule,
     AppRoutingModule,

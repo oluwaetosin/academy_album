@@ -1,0 +1,31 @@
+<!-- <div>
+  {{employees | json}}
+</div> -->
+<div >
+  <form class="form-container">
+    <input #name type='text' name='name' placeholder="Employee Name">
+    <input #age type="text" name='age' placeholder="Employee Age">
+    <input #salary type="text" name='salary' placeholder="Salary">
+    <button (click)="onSubmit(name.value,age.value,salary.value)">Submit</button>
+
+  </form>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+
+     <tr *ngFor="let employee of employees">
+      <th scope="row">{{employee.id}}</th>
+      <td>{{employee.employee_name}}</td>
+      <td>{{employee.employee_salary}}</td>
+      <td>{{employee.employee_age}}</td>
+    </tr>
+  </tbody>
+</table>

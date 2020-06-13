@@ -1,4 +1,4 @@
-<div class="card milk" style="width: 18rem;" (click)="traineeSelected(trainees)">
+<!-- <div class="card milk" style="width: 18rem;" (click)="traineeSelected(trainees)">
 <img src="./assets/img/{{trainees.image}}" class="card-img-top profile_pic" alt="...">
 <div class="card-body">
   <h5 class="card-title">{{trainees.name}}</h5>
@@ -8,4 +8,16 @@
     <li *ngFor="let hobby of trainees.hobbies">{{hobby}}</li>
   </ul>
   </div>
-</div>
+</div> -->
+
+<div class="profile-item">
+  <div class="card profile-pic" style="width: 18rem;" (click)="traineeSelected(trainees)"
+  [ngStyle]="{'background-image': 'url(./assets/img/' + trainees.image + ')'}">
+
+  <div class="description">
+    <h5 class="name">{{trainees.name}}</h5>
+    <h5 class="view">View</h5>
+ </div>
+  </div>
+
+  </div>

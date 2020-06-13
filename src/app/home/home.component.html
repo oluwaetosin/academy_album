@@ -14,12 +14,12 @@
         <div class="col-md-4">2</div>
         <div class="col-md-4">3</div>
       </div> -->
-    
+
       <!-- <div class="row">
         <div class="col-md-4" *ngFor="let trainee of academy; let i = index">{{i}}</div>
       </div> -->
       <div class="row">
-        
+
         <!-- <div *ngFor="let trainee of trainees;">{{trainee.name}}</div> -->
 
       </div>
@@ -27,7 +27,9 @@
         <div class="col-md-10">
           <div class="row">
             <div class="col-md-4" *ngFor="let trainees of academy; let i = index">
-              <app-trainee [trainees]="trainees" (selectedtrainee)=traineeListener($event)></app-trainee>
+              <app-trainee
+               [trainees]="trainees"
+                (selectedtrainee)=traineeListener($event)></app-trainee>
             </div>
           </div>
         </div>
